@@ -59,7 +59,6 @@ void loop() {
   lux = (0.009768*readLight)+10;
   Blynk.virtualWrite(V0, lux);
   Blynk.virtualWrite(V2, lux);
-  Serial.print(lux);
   t = dht.readTemperature();
  
  if(t >= pin2){
