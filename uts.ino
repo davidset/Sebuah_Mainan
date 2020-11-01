@@ -7,7 +7,8 @@
 #define DHTPIN 23
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
-int t, lux;
+int t;
+int lux;
 int led = 22,led2 = 3,potPin=39,pin,pin2,pin3;
 WidgetLED ledTemp(V7);
 WidgetLED ledLight(V6);
